@@ -8,81 +8,32 @@
     android:layout_height="match_parent"
     tools:context=".FormCadastro">
 
-    <ImageView
-        android:id="@+id/person"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/person01"
-        app:layout_constraintBaseline_toTopOf="parent"
-        android:contentDescription="@null"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="77dp" />
-
     <EditText
         android:id="@+id/nomepessoa"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="32dp"
-        android:background="@android:color/white"
-        android:hint="@string/nomepessoa"
         android:autofillHints="name"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/nomepessoa"
         android:inputType="textPersonName"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@android:color/white"
-        android:hint="@string/email_hint"
-        android:autofillHints="emailAddress"
-        android:drawableEnd="@drawable/ic_email"
-        android:inputType="textEmailAddress"
-        android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nomepessoa" />
-
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/login_password_hint"
-        android:autofillHints="password"
-        android:drawableEnd="@drawable/ic_eye"
-        android:inputType="textPassword"
-        android:padding="12dp"
-        android:background="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextPassword2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:autofillHints="password"
-        android:background="@android:color/white"
+        android:background="@drawable/edit_text_background"
         android:drawableEnd="@drawable/ic_eye"
         android:hint="@string/login_password_hint2"
         android:inputType="textPassword"
@@ -97,9 +48,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:background="@android:color/white"
+        android:background="@drawable/edit_text_background"
         android:hint="@string/cpf_text"
         android:inputType="number"
         android:padding="12dp"
@@ -107,21 +58,81 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextPassword2" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints="password"
+        android:background="@drawable/edit_text_background"
+        android:drawableEnd="@drawable/ic_eye"
+        android:hint="@string/login_password_hint"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cargo_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/cargo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpf">
+
+        <AutoCompleteTextView
+            android:id="@+id/cargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/numero_hint"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nomepessoa" />
+
+
     <Button
         android:id="@+id/buttonCadastro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="132dp"
         android:layout_marginEnd="32dp"
         android:padding="12dp"
+        android:backgroundTint="@color/curiousblue"
         android:text="@string/register_text"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cpf" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

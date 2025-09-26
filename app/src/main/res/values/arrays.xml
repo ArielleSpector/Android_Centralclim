@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cargos_array">
+        <item>Técnico</item>
+        <item>Gerente</item>
+        <item>Administrador</item>
+        <item>Vendedor</item>
+    </string-array>
+</resources>

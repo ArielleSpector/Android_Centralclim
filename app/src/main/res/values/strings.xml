@@ -2,15 +2,26 @@
     <string name="app_name">Android_Centralclim</string>
 
     <string name="centralclim">Centralclim</string>
-    <string name="email_hint">Email</string>
-    <string name="login_password_hint">Password</string>
-    <string name="login_password_hint2">Password</string>
+    <string name="numero_hint">Número de Celular*</string>
+    <string name="login_password_hint">Senha*</string>
+    <string name="login_password_hint2">Confirme a senha*</string>
     <string name="login_button_text">Login</string>
     <string name="forgot_password_text">Esqueceu a senha?</string>
     <string name="no_account_register_text">Cadastre-se aqui.</string>
     <string name="register_text">Cadastre-se</string>
-    <string name="cpf_text">CPF</string>
-    <string name="nomepessoa">Nome Completo</string>
+    <string name="cpf_text">CPF*</string>
+    <string name="nomepessoa">Nome Completo*</string>
+    <string name="cargo">Cargo*</string>
+    <string name="cep_text">CEP*</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="bairro">Bairro</string>
+    <string name="numero_casa">Número</string>
+    <string name="referencia">Ponto de Referência</string>
+
+
+
+
+
 
 
 </resources>

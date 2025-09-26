@@ -1,9 +1,6 @@
 package com.example.android_centralclim;
 
 import android.os.Bundle;
-// Adicione estes imports
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,27 +8,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-
-public class FormCadastro extends AppCompatActivity {
+public class FormClaCli extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_form_cadastro);
-
-
-        String[] cargos = getResources().getStringArray(R.array.cargos_array);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_dropdown_item_1line,
-                cargos
-        );
-        AutoCompleteTextView autoCompleteTextView = findViewById(R.id.cargo);
-
-        autoCompleteTextView.setAdapter(adapter);
-
-
+        setContentView(R.layout.activity_form_cla_cli);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
