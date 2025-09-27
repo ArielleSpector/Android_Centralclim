@@ -3,6 +3,7 @@
 
     <string name="centralclim">Centralclim</string>
     <string name="numero_hint">Número de Celular*</string>
+    <string name="login_email_hint">E-mail*</string>
     <string name="login_password_hint">Senha*</string>
     <string name="login_password_hint2">Confirme a senha*</string>
     <string name="login_button_text">Login</string>

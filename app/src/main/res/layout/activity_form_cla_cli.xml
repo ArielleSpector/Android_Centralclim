@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="24dp"
-            tools:context=".CadastroActivity">
+            tools:context=".CadastreActivity">
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
@@ -35,6 +35,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/nomepessoa"
+                android:minHeight="48dp"
+                android:background="@drawable/edit_text_background"
                 app:layout_constraintTop_toBottomOf="@id/toolbar"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -43,6 +45,8 @@
                     android:id="@+id/nomeEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="@string/nomepessoa"
                     android:inputType="textPersonName|textCapWords" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -53,6 +57,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:hint="@string/numero_hint"
+                android:minHeight="48dp"
+                android:background="@drawable/edit_text_background"
                 app:layout_constraintTop_toBottomOf="@id/nomeInputLayout"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -60,7 +66,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/celularEditText"
                     android:layout_width="match_parent"
+                    android:minHeight="48dp"
                     android:layout_height="wrap_content"
+                    android:hint="@string/numero_hint"
                     android:inputType="phone" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,6 +79,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:hint="@string/cpf_text"
+                android:minHeight="48dp"
+                android:background="@drawable/edit_text_background"
                 app:layout_constraintTop_toBottomOf="@id/celularInputLayout"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -79,6 +89,8 @@
                     android:id="@+id/cpfEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="@string/cpf_text"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,6 +101,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:hint="@string/cep_text"
+                android:minHeight="48dp"
+                android:background="@drawable/edit_text_background"
                 app:layout_constraintTop_toBottomOf="@id/cpfInputLayout"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -97,6 +111,8 @@
                     android:id="@+id/cepEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/cep_text"
+                    android:minHeight="48dp"
                     android:maxLength="8"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -108,7 +124,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
+                android:minHeight="48dp"
                 android:hint="@string/logradouro"
+                android:background="@drawable/edit_text_background"
                 app:layout_constraintTop_toBottomOf="@id/cepInputLayout"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/bairroInputLayout">
@@ -117,6 +135,8 @@
                     android:id="@+id/logradouroEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="@string/logradouro"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -127,7 +147,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="8dp"
+                android:minHeight="48dp"
                 android:hint="@string/bairro"
+                android:background="@drawable/edit_text_background"
                 app:layout_constraintTop_toBottomOf="@id/cepInputLayout"
                 app:layout_constraintStart_toEndOf="@id/logradouroInputLayout"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -135,7 +157,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/bairroEditText"
                     android:layout_width="match_parent"
+                    android:minHeight="48dp"
                     android:layout_height="wrap_content"
+                    android:hint="@string/bairro"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -145,7 +169,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:minHeight="48dp"
                 android:hint="@string/numero_casa"
+                android:background="@drawable/edit_text_background"
                 app:layout_constraintTop_toBottomOf="@id/logradouroInputLayout"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -154,7 +180,11 @@
                     android:id="@+id/numeroEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number" />
+                    android:minHeight="48dp"
+                    android:hint="@string/numero_casa"
+                    android:inputType="number"
+                    android:textColorHint="#757575"
+                    tools:ignore="TextContrastCheck" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -163,7 +193,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:minHeight="48dp"
                 android:hint="@string/referencia"
+                android:background="@drawable/edit_text_background"
                 app:layout_constraintTop_toBottomOf="@id/numeroInputLayout"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -171,7 +203,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/referenciaEditText"
                     android:layout_width="match_parent"
+                    android:minHeight="48dp"
                     android:layout_height="wrap_content"
+                    android:hint="@string/referencia"
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -180,6 +214,7 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="32dp"
+                android:minHeight="48dp"
                 android:backgroundTint="@color/curiousblue"
                 android:text="@string/register_text"
                 app:cornerRadius="8dp"
