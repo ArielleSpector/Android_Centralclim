@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Android_Centralclim</string>
-
     <string name="centralclim">Centralclim</string>
     <string name="numero_hint">Número de Celular*</string>
     <string name="login_email_hint">E-mail*</string>
@@ -9,6 +8,7 @@
     <string name="login_button_text">Login</string>
     <string name="forgot_password_text">Esqueceu a senha?</string>
     <string name="no_account_register_text">Cadastre-se aqui.</string>
+
     <string name="register_text">Cadastre-se</string>
     <string name="cpf_text">CPF*</string>
     <string name="nomepessoa">Nome Completo*</string>
@@ -19,10 +19,25 @@
     <string name="numero_casa">Número</string>
     <string name="referencia">Ponto de Referência</string>
 
-
-
-
-
-
-
+    <string name="hi_adm">Olá, Administrador!</string>
+    <string name="log_adm">Faça login para continuar!</string>
+    <string name="num_adm">8</string>
+    <string name="ser_adm">Serviços Pendentes</string>
+    <string name="fun_adm">Pedro S. Ana Ls</string>
+    <string name="fun_adm2">Maria S.</string>
+    <string name="tec_adm">Técnicos Ativos</string>
+    <string name="adm_act">Ações Administrativas</string>
+    <string name="adm_create_cli">CRIAR CLIENTE</string>
+    <string name="adm_create_servic">CRIAR SERVIÇO</string>
+    <string name="adm_create_funcio">CRIAR FUNCIONÁRIO</string>
+    <string name="adm_create_rela">RELATÓRIOS</string>
+    <string name="cli_adm">Cliente: João P</string>
+    <string name="cli_adm2">Cliente: Ana Maria</string>
+    <string name="sev_and_adm_num">3</string>
+    <string name="timeline_serv">Em Andamento</string>
+    <string name="total_sev_conc">43</string>
+    <string name="serv_conc">Concluídos no Mês:</string>
+    <string name="end_conc">Aquela rua ali</string>
+    <string name="end_conc2">Aquela rua ali2</string>
+    <string name="serv_recen">Serviços Recentes</string>
 </resources>
