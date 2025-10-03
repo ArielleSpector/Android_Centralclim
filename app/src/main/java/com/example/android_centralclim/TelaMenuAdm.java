@@ -5,6 +5,7 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.Toast;
+import android.content.Intent;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
@@ -113,8 +114,22 @@ public class TelaMenuAdm extends AppCompatActivity {
     private void configurarListeners() {
         // --- Listeners dos Botões ---
         btnCriarCliente.setOnClickListener(v -> {
-            // Lógica para criar cliente
-            Toast.makeText(this, "Abrir tela de criar cliente...", Toast.LENGTH_SHORT).show();
+            // Cria uma "intenção" para abrir a tela do formulário de cliente
+            Intent intent = new Intent(TelaMenuAdm.this, FormClaCli.class);
+            // Executa a intenção
+            startActivity(intent);
+        });
+
+        btnCriarServico.setOnClickListener(v -> {
+            // Lógica para abrir a tela de criar serviço
+            Intent intent = new Intent(TelaMenuAdm.this, AddServ.class);
+            startActivity(intent);
+        });
+
+        btnCriarFuncionario.setOnClickListener(v -> {
+            // Lógica para abrir a tela de criar funcionário
+            Intent intent = new Intent(TelaMenuAdm.this, FormCadastro.class);
+            startActivity(intent);
         });
 
         // ... (outros listeners de botão)

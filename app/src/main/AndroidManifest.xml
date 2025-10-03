@@ -14,21 +14,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Centralclim"
         android:usesCleartextTraffic="true">
+
+        <!-- TelaMenuAdm agora é a tela principal (LAUNCHER) -->
         <activity
             android:name=".TelaMenuAdm"
-            android:exported="false" />
-        <activity
-            android:name=".FormClaCli"
-            android:exported="false" />
-        <activity
-            android:name=".FormCadastro"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".FormClaCli"
+            android:exported="false" />
+
+        <!-- FormCadastro não é mais a tela principal -->
+        <activity
+            android:name=".FormCadastro"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
